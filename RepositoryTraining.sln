@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xunittests", "xunittests\xunittests.csproj", "{4287E13C-B1F7-427E-9742-BB9A42D5BE18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{2110C7C2-5503-4B5B-8F94-59F4D5D39CAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4287E13C-B1F7-427E-9742-BB9A42D5BE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4287E13C-B1F7-427E-9742-BB9A42D5BE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4287E13C-B1F7-427E-9742-BB9A42D5BE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4287E13C-B1F7-427E-9742-BB9A42D5BE18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2110C7C2-5503-4B5B-8F94-59F4D5D39CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2110C7C2-5503-4B5B-8F94-59F4D5D39CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2110C7C2-5503-4B5B-8F94-59F4D5D39CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2110C7C2-5503-4B5B-8F94-59F4D5D39CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

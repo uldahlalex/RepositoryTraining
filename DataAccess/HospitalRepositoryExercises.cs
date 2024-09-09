@@ -4,7 +4,7 @@ using service.responses;
 
 namespace DataAccess;
 
-public class HospitalRespositoryExercises(HospitalContext context) : IRepository
+public class HospitalRepositoryExercises(HospitalContext context) : IRepository
 {
     public List<Doctor> GetAllDoctors()
     {

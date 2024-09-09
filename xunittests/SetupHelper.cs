@@ -4,7 +4,6 @@ using DataAccess.Solutions;
 using Microsoft.Extensions.DependencyInjection;
 using PgCtx;
 
-// Add other necessary using statements
 
 public static class TestSetupHelper
 {
@@ -20,7 +19,7 @@ public static class TestSetupHelper
             }
             else
             {
-                services.AddTransient<IRepository, HospitalRespositoryExercises>();
+                services.AddTransient<IRepository, HospitalRepositoryExercises>();
             }
         });
     }

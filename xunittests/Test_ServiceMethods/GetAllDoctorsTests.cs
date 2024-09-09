@@ -10,11 +10,11 @@ using Xunit.Abstractions;
 
 namespace UnitTests;
 
-public class HospitalRespositoryExercisesTests
+public class GetAllDoctorsTests
 {
     private readonly PgCtxSetup<HospitalContext> _setup;
 
-    public HospitalRespositoryExercisesTests(ITestOutputHelper outputHelper)
+    public GetAllDoctorsTests(ITestOutputHelper outputHelper)
     {
         _setup = TestSetupHelper.CreateTestSetup();
     }

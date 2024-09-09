@@ -16,7 +16,7 @@ public class HospitalRepositorySolutions(HospitalContext context) : IRepository
         return context.Doctors.ToList();
     }
 
-    public List<Doctor> GetAllDoctorsWithDiagnosesMade()
+    public List<Doctor> GetAllDoctorsIncludingDiagnoses()
     {
         return context.Doctors.Include(d => d.Diagnoses).ToList();
     }
@@ -31,7 +31,7 @@ public class HospitalRepositorySolutions(HospitalContext context) : IRepository
         return context.Doctors.OrderByDescending(d => d.Diagnoses.Count).First();
     }
 
-    public List<Patient> GetAllPatientsWhoHasHadTreatment(int treatmentId)
+    public List<Patient> GetAllPatientsWhoHasHadTreatmentWithId(int treatmentId)
     {
         return context.Patients.Where(p => p.PatientTreatments.Any(t => t.TreatmentId == treatmentId)).ToList();
     }
@@ -41,18 +41,20 @@ public class HospitalRepositorySolutions(HospitalContext context) : IRepository
         return context.Doctors.Where(d => d.Specialty.Equals(specialty)).ToList();
     }
 
-    public List<Doctor> ListDoctorsByYearsExperience(int yearsExperience)
+    public List<Doctor> ListDoctorsByYearsExperience()
     {
-        throw new NotImplementedException();
+        return context.Doctors.OrderBy(d => d.YearsExperience).ToList();
     }
 
     public int GetTotalNumberOfDoctors()
     {
-        throw new NotImplementedException();
+        return context.Doctors.Count();
     }
 
     public string GetNameOfMostUsedTreatment()
     {
-        throw new NotImplementedException();
+        return context.Treatments
+            .OrderByDescending(t => t.PatientTreatments.Count)
+            .First().Name;
     }
 }

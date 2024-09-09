@@ -23,7 +23,7 @@ public class GetAllPatientsWhoHasHadTreatmentWithId
         _setup.DbContextInstance.SaveChanges();
         
         //Act
-        var result = _setup.ServiceProviderInstance.GetRequiredService<IRepository>().GetAllPatientsWhoHasHadTreatment(treatment.Id);
+        var result = _setup.ServiceProviderInstance.GetRequiredService<IRepository>().GetAllPatientsWhoHasHadTreatmentWithId(treatment.Id);
         
         //Assert
         Assert.Equivalent(result.First(), patient);

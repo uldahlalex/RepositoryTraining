@@ -1,12 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=699152b4_002Dd9c8_002D4321_002Da738_002D1b5c7b23e4e2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllDoctorsAsDtos_ReturnsAllDoctsAsDtos" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Or&gt;
-    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllDoctorsWithDiagnosesMadeTests.cs&lt;/ProjectFile&gt;
-    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllDoctorsTests.cs&lt;/ProjectFile&gt;
-    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetDoctorWhoMadeMostDiagnosesTests.cs&lt;/ProjectFile&gt;
-    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllPatientsWhoHasHadTreatmentWithId.cs&lt;/ProjectFile&gt;
-    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllDoctorsWithSpecialityTests.cs&lt;/ProjectFile&gt;
-  &lt;/Or&gt;
+  &lt;ProjectFolder&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods&lt;/ProjectFolder&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/EnvironmentVariablesIndexed/=DOTNET_005FENVIRONMENT/@EntryIndexRemoved">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/EnvironmentVariablesIndexed/=RESHARPER_005FHOST_005FVERSION/@EntryIndexRemoved">True</s:Boolean>

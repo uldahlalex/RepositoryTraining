@@ -11,12 +11,22 @@ public class HospitalRepositoryExercises(HospitalContext context) : IRepository
         throw new NotImplementedException();
     }
 
-    public List<Doctor> GetAllDoctorsWithDiagnosesMade()
+    public List<DoctorDto> GetAllDoctorsAsDtos()
     {
         throw new NotImplementedException();
     }
 
-    public List<DoctorDto> GetAllDoctorsAsDtos()
+    public List<Doctor> ListDoctorsByYearsExperience()
+    {
+        throw new NotImplementedException();
+    }
+
+    public int GetTotalNumberOfDoctors()
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<Doctor> GetAllDoctorsIncludingDiagnoses()
     {
         throw new NotImplementedException();
     }
@@ -26,22 +36,12 @@ public class HospitalRepositoryExercises(HospitalContext context) : IRepository
         throw new NotImplementedException();
     }
 
-    public List<Patient> GetAllPatientsWhoHasHadTreatment(int treatmentId)
-    {
-        throw new NotImplementedException();
-    }
-
     public List<Doctor> GetAllDoctorsWithSpecialty(string specialty)
     {
         throw new NotImplementedException();
     }
 
-    public List<Doctor> ListDoctorsByYearsExperience(int yearsExperience)
-    {
-        throw new NotImplementedException();
-    }
-
-    public int GetTotalNumberOfDoctors()
+    public List<Patient> GetAllPatientsWhoHasHadTreatmentWithId(int treatmentId)
     {
         throw new NotImplementedException();
     }

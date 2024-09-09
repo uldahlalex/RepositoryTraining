@@ -33,7 +33,7 @@ public class GetAllDoctorsWithDiagnosesMadeTests
         
         
         // A
-        var result =_setup.ServiceProviderInstance.GetRequiredService<IRepository>().GetAllDoctorsWithDiagnosesMade();
+        var result =_setup.ServiceProviderInstance.GetRequiredService<IRepository>().GetAllDoctorsIncludingDiagnoses();
         
         // Assert
         var expectedDate = diagnosis.DiagnosisDate;

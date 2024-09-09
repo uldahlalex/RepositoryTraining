@@ -8,8 +8,8 @@ public interface IRepository
     public List<Doctor> GetAllDoctors();
     public List<Doctor> GetAllDoctorsWithDiagnosesMade();
     public List<DoctorDto> GetAllDoctorsAsDtos();
-    public Doctor GetDoctorWhoMadeMostDianoses();
-    public List<Patient> GetAllPatientsWhoHasDoctorWithId(int doctorId);
+    public Doctor GetDoctorWhoMadeMostDiagnoses();
+    public List<Patient> GetAllPatientsWhoHasHadTreatment(int treatmentId);
     public List<Doctor> GetAllDoctorsWithSpecialty(string specialty);
     public List<Doctor> ListDoctorsByYearsExperience(int yearsExperience);
     public int GetTotalNumberOfDoctors();

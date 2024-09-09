@@ -1,4 +1,5 @@
 using Bogus;
+using Bogus.Extensions;
 using dataaccess.Models;
 
 namespace UnitTests.Mocks;
@@ -37,5 +38,21 @@ public class Constants
             .RuleFor(d => d.Disease, f => disease)
             .RuleFor(d => d.Doctor, f => doctor)
             .RuleFor(d => d.Patient, f => patient);
+    }
+    
+    public static Treatment GetTreatment()
+    {
+        return new Faker<Treatment>()
+            .RuleFor(t => t.Name, f => f.Lorem.Word())
+            .RuleFor(t => t.Cost, f => new Random().NextDouble());
+    }
+
+    public static PatientTreatment GetPatientTreatment(Patient patient, Treatment treatment)
+    {
+        return new Faker<PatientTreatment>()
+            .RuleFor(pt => pt.StartDate, f => DateTime.UtcNow)
+            .RuleFor(pt => pt.EndDate, f => DateTime.UtcNow)
+            .RuleFor(pt => pt.Patient, f => patient)
+            .RuleFor(pt => pt.Treatment, f => treatment);
     }
 }

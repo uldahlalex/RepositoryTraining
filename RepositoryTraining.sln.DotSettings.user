@@ -3,6 +3,8 @@
   &lt;Or&gt;
     &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllDoctorsWithDiagnosesMadeTests.cs&lt;/ProjectFile&gt;
     &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllDoctorsTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetDoctorWhoMadeMostDiagnosesTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;4287E13C-B1F7-427E-9742-BB9A42D5BE18/d:Test_ServiceMethods/f:GetAllPatientsWhoHasHadTreatmentWithId.cs&lt;/ProjectFile&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestRunner/EnvironmentVariablesIndexed/=DOTNET_005FENVIRONMENT/@EntryIndexRemoved">True</s:Boolean>

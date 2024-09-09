@@ -21,12 +21,12 @@ public class HospitalRepositoryExercises(HospitalContext context) : IRepository
         throw new NotImplementedException();
     }
 
-    public Doctor GetDoctorWhoMadeMostDianoses()
+    public Doctor GetDoctorWhoMadeMostDiagnoses()
     {
         throw new NotImplementedException();
     }
 
-    public List<Patient> GetAllPatientsWhoHasDoctorWithId(int doctorId)
+    public List<Patient> GetAllPatientsWhoHasHadTreatment(int treatmentId)
     {
         throw new NotImplementedException();
     }

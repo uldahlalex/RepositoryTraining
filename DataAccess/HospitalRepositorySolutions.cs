@@ -5,6 +5,10 @@ using service.responses;
 
 namespace DataAccess.Solutions;
 
+/// <summary>
+/// If you're stuck or are curious how the implementation can be built, here I have some solutions
+/// </summary>
+/// <param name="context"></param>
 public class HospitalRepositorySolutions(HospitalContext context) : IRepository
 {
     public List<Doctor> GetAllDoctors()
@@ -22,14 +26,14 @@ public class HospitalRepositorySolutions(HospitalContext context) : IRepository
         return context.Doctors.Select(d => new DoctorDto().FromEntity(d)).ToList();
     }
 
-    public Doctor GetDoctorWhoMadeMostDianoses()
+    public Doctor GetDoctorWhoMadeMostDiagnoses()
     {
-        throw new NotImplementedException();
+        return context.Doctors.OrderByDescending(d => d.Diagnoses.Count).First();
     }
 
-    public List<Patient> GetAllPatientsWhoHasDoctorWithId(int doctorId)
+    public List<Patient> GetAllPatientsWhoHasHadTreatment(int treatmentId)
     {
-        throw new NotImplementedException();
+        return context.Patients.Where(p => p.PatientTreatments.Any(t => t.TreatmentId == treatmentId)).ToList();
     }
 
     public List<Doctor> GetAllDoctorsWithSpecialty(string specialty)

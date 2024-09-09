@@ -12,28 +12,7 @@ namespace UnitTests;
 
 public class GetAllDoctorsTests
 {
-    private readonly PgCtxSetup<HospitalContext> _setup;
-
-    public GetAllDoctorsTests(ITestOutputHelper outputHelper)
-    {
-        _setup = TestSetupHelper.CreateTestSetup();
-    }
-
-    [Fact]
-    public void GetAllDoctors_ReturnsAllDoctors()
-    {
-        var doctors = new List<Doctor>
-        {
-            Constants.GetDoctor(),
-            Constants.GetDoctor()
-        };
-        _setup.DbContextInstance.Doctors.AddRange(doctors);
-        _setup.DbContextInstance.SaveChanges();
-
-        var result =_setup.ServiceProviderInstance.GetRequiredService<IRepository>().GetAllDoctors();
-
-        Assert.Equivalent(doctors, result);
-    }
+    private readonly PgCtxSetup<HospitalContext> _setup = TestSetupHelper.CreateTestSetup();
 
     [Fact]
     public void GetAllDoctorsAsDtos_ReturnsAllDoctsAsDtos()

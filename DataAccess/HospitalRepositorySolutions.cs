@@ -38,7 +38,7 @@ public class HospitalRepositorySolutions(HospitalContext context) : IRepository
 
     public List<Doctor> GetAllDoctorsWithSpecialty(string specialty)
     {
-        throw new NotImplementedException();
+        return context.Doctors.Where(d => d.Specialty.Equals(specialty)).ToList();
     }
 
     public List<Doctor> ListDoctorsByYearsExperience(int yearsExperience)

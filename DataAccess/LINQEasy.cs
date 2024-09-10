@@ -25,7 +25,7 @@ public class EasyLinqExercises : IEasyLinqExercises
         throw new NotImplementedException();
     }
 
-    // Exercise 5: Return the string "Hello, [name]!" for each name in the given list.
+    // Exercise 5: Return the string "Hello, [name]" for each name in the given list.
     public List<string> GetHelloMessages(List<string> names)
     {
         throw new NotImplementedException();

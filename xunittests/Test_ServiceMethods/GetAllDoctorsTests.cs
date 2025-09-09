@@ -6,7 +6,6 @@ using Microsoft.Extensions.DependencyInjection;
 using PgCtx;
 using service.responses;
 using UnitTests.Mocks;
-using Xunit.Abstractions;
 
 namespace UnitTests;
 

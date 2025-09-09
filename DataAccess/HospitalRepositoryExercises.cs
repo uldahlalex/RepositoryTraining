@@ -8,7 +8,7 @@ public class HospitalRepositoryExercises(HospitalContext context) : IRepository
 {
     public List<Doctor> GetAllDoctors()
     {
-        throw new NotImplementedException();
+        return context.Doctors.ToList();
     }
 
     public List<DoctorDto> GetAllDoctorsAsDtos()
@@ -38,6 +38,7 @@ public class HospitalRepositoryExercises(HospitalContext context) : IRepository
 
     public List<Doctor> GetAllDoctorsWithSpecialty(string specialty)
     {
+        
         throw new NotImplementedException();
     }
 

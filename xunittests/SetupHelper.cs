@@ -9,7 +9,7 @@ public static class TestSetupHelper
 {
     public static PgCtxSetup<HospitalContext> CreateTestSetup()
     {
-        bool useSolution = Environment.GetEnvironmentVariable("USE_SOLUTION")?.ToLower() == "true";
+        bool useSolution = false;// Environment.GetEnvironmentVariable("USE_SOLUTION")?.ToLower() == "true";
 
         return new PgCtxSetup<HospitalContext>(configureServices: services =>
         {
